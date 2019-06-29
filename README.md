@@ -199,4 +199,4 @@ You need to install [Extension Pack](https://download.virtualbox.org/virtualbox/
 In order to see whats happening with your emulator inside the container, you can use `vncviewer` from [here](https://www.realvnc.com/en/connect/download/viewer/)
 and use
 
-`vnc://<docker-machine ip <machine-name>>:6080`
+`vnc://<docker-machine ip <machine-name>>:5901`
