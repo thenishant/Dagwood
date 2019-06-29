@@ -1,0 +1,38 @@
+# Use an existing docker image as base
+FROM thenishant/appium
+
+LABEL maintainer = "Nishant Sharma <theNishant3@gmail.com>"
+
+RUN apt-get -qqy update && apt-get -qqy install --no-install-recommends \
+    xterm \
+    socat \
+    menu \
+    python-numpy \
+    net-tools \
+    qemu-kvm \
+    libvirt-bin \
+    ubuntu-vm-builder \
+    bridge-utils \
+ && rm -rf /var/lib/apt/lists/*
+
+# Install SDK packages
+ARG ANDROID_VERSION=5.0.1
+ARG API_LEVEL=21
+ARG PROCESSOR=x86
+ARG SYS_IMG=x86
+ARG IMG_TYPE=google_apis
+ARG RELEASE_VERSION=1.5-p0
+ENV ANDROID_VERSION=$ANDROID_VERSION \
+    API_LEVEL=$API_LEVEL \
+    PROCESSOR=$PROCESSOR \
+    SYS_IMG=$SYS_IMG \
+    IMG_TYPE=$IMG_TYPE \
+    RELEASE_VERSION=$RELEASE_VERSION \
+    APP_TYPE=Emulator
+ENV PATH ${PATH}:${ANDROID_HOME}/build-tools
+
+RUN yes | sdkmanager --licenses && \
+    sdkmanager "platforms;android-${API_LEVEL}" "system-images;android-${API_LEVEL};${IMG_TYPE};${SYS_IMG}" "emulator"
+
+ADD start_emulator.sh /start_emulator
+RUN chmod +x /start_emulator

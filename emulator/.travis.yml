@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - "3.5"
+
+sudo: required
+
+services:
+  - docker
+
+env:
+  - ANDROID_VERSION=5.0.1
+  - ANDROID_VERSION=5.1.1
+  - ANDROID_VERSION=6.0
+  - ANDROID_VERSION=7.0
+  - ANDROID_VERSION=7.1.1
+  - ANDROID_VERSION=8.0
+  - ANDROID_VERSION=8.1
+  - ANDROID_VERSION=9.0
+
+script: bash travis.sh
+
+after_success: echo "Party hard when you see this !!!"
