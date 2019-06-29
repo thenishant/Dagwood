@@ -1,6 +1,6 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'idea'
+//and standard one
+apply plugin: 'java'
 
 group 'Appium_Docker'
 version '1.0-SNAPSHOT'
