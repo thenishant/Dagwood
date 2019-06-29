@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c87b301-b6a6-482a-8718-76304d0d3839" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="0c87b301-b6a6-482a-8718-76304d0d3839" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +98,6 @@
               <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-images" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="docker-images" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-images" type="462c0819:PsiDirectoryNode" />
-              <item name="appium" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -167,7 +160,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19071428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

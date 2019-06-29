@@ -1,6 +1,6 @@
 # Appium Docker
 
-##Real Device
+## Real Device
 
 ### Why
 
@@ -84,7 +84,7 @@ You need to install [Extension Pack](https://download.virtualbox.org/virtualbox/
 
 ---
 
-### Emulator
+## Emulator
 
 ---
 
@@ -191,3 +191,12 @@ You need to install [Extension Pack](https://download.virtualbox.org/virtualbox/
     ```
     
 15. Now Run your appium test by using the app location from `step 13` and with from `step 14`.
+
+---
+
+## VNC Server
+
+In order to see whats happening with your emulator inside the container, you can use `vncviewer` from [here](https://www.realvnc.com/en/connect/download/viewer/)
+and use
+
+`vnc://<docker-machine ip <machine-name>>:6080`
