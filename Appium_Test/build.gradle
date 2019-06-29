@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'Appium_Docker'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.testng', name: 'testng', version: '6.11'
+    compile group: 'io.appium', name: 'java-client', version: '7.0.0'
+}
